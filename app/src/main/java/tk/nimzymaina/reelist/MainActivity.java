@@ -68,9 +68,9 @@ public class MainActivity extends AppCompatActivity {
         // set the adapter
         recyclerView.setAdapter(mAdapter);
 
-        //prepareMovieData();
-        showpDialog();
-        makeJsonArrayRequest();
+        prepareMovieData();
+        //showpDialog();
+        //makeJsonArrayRequest();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

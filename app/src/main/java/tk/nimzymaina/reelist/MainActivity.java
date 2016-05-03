@@ -35,6 +35,7 @@ import java.util.List;
 import java.util.Map;
 
 import tk.nimzymaina.reelist.app.AppController;
+import tk.nimzymaina.reelist.helpers.ColoredSnackBar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -275,6 +276,8 @@ public class MainActivity extends AppCompatActivity {
                         makeJsonArrayRequest();
                     }
                 });
+
+        ColoredSnackBar.error(snackbar);
 
 // Changing message text color
         snackbar.setActionTextColor(Color.RED);
